@@ -1,0 +1,324 @@
+<!---Created by - Monu ----
+    ☆ A website UI (TechMall.com)
+    ☆ Points to be noted:'
+      □ Nav Icon transition
+      □ Smiling Website Design
+      □ Click the heart to add the product in your wishlist
+      □ Use the Nav Bar to Open and Close:- Home,Cart,Wishlist...
+      □ 3-D rotating Cube showing Offers.....D
+      Etc.......)
+   ☆ All the suggestions are most welcome........)
+   ☆ Hope you like it......)
+
+All the images credits goes to their owners, you can check out website by the src of the images ;) 
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechMall.com || Online Technology Shopping Website </title>
+    <!-----Created By - Monu ------>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Coiny|Ubuntu|Metal+Mania|Yatra+One">
+</head>
+<body>
+    <!---Loading Page------->
+    <div id="first_page">
+        <h2>TechMall.com</h2>
+        <div>
+            <img id="loader" src="https://cdn-icons-png.flaticon.com/128/2331/2331970.png">
+        </div>
+    </div>
+    <section>
+        <!----Header------>
+        <header>
+            <!---Nav Icon------>
+            <div id="h1">
+                <div id="nav-icon">
+                    <span id="line1"></span>
+                    <span></span>
+                    <span id="line2"></span>
+                </div>
+                <span>TechMall.com</span>
+                <button class="bi-bell-fill"></button>
+            </div>
+            <!---Search Bar------>
+            <div id="search-bar">
+                <input id="search" type="search" placeholder="Search for Gadgets, Mobiles etc." >
+                <button class="bi-search"></button>
+                <button class="bi-mic"></button>
+            </div>
+            <span class="design"></span>
+        </header>
+        <!-----Nav Bar------->
+        <nav>
+            <div>
+                <p id="name">Monu</p>
+                <img id="propic" src="https://dl.dropbox.com/s/gl2lxymyaj009w9/1e2d2b043ada9c47a95406e1d2e1b5a8-1.jpg">
+            </div>
+            <hr>
+            <ul>
+                <li><a href="#" class="bi-house">Home</a></li>
+                <li><a href="#" class="bi-cart">My Cart</a></li>
+                <li><a class="bi-heart" onclick="wishli()" href="#" >My Wishlist</a></li>
+                <li><a class="bi-person" href="#" >My Account</a></li>
+                <hr>
+                <li><a onclick="navigate()" href="#contact" >Contact Us</a></li>
+                <li><a href="" >About Us</a></li>
+                <li><a href="" >Privacy Policy</a></li>
+                <li><a href="" >Help Centre</a></li>
+                <li><a href="" >Legal</a></li>
+            </ul>
+            <p class="rights"> &copy;2021, Monu. All rights reserved.</p>
+        </nav>
+        <!---Home------->
+        <div id="home">
+        <!----Rotating Cube Panel------>
+        <div id="cube-cont">
+            <div id="cube">
+                <div class="front"><img src="https://st2.depositphotos.com/1001941/11444/v/380/depositphotos_114445088-stock-illustration-independence-day-sale-poster-or.jpg"></div>
+                <div class="right"><img src=" https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/Boat/R2330-Shot-4_440x440.jpg "></div>
+                <div class="back"><img src=" https://images-eu.ssl-images-amazon.com/images/G/31/img21/Laptops/675x645.jpg "></div>
+                <div class="left"><img src=" https://images-eu.ssl-images-amazon.com/images/G/31/img21/Monitors/Co-op/LG/UG_1242x450_july.jpg "></div>
+            </div>
+            <div class="dot-box"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="products1">
+            <h3>Upto 30% Off | Top Smartphone Brands</h3>
+            <div>
+                <div class="p" >
+                    <img src="https://images.samsung.com/is/image/samsung/p5/uk/smartphones/galaxy-s10/buynew/Common_M000_S10_720.jpg">
+                    <p>Samsung Smartphones</p>
+                </div>
+                <div class="p">
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1600136692.96833494.png?thumb=1&w=385&h=385&width=385&height=385">
+                    <p>Redmi Smartphones</p>
+                </div>
+            </div>
+            <div>
+                <div class="p" >
+                    <img src="https://bingkart.com/4558-large_default/oppo-k3-aurora-blue-6gb-ram-amoled-display-64gb-storage-3765mah-battery.jpg">
+                    <p>Oppo Smartphones</p>
+                </div>
+                <div class="p" >
+                    <img src=" https://3.img-dpreview.com/files/p/E~TS1180x0~articles/3653244647/OP8PRO-Onyx-Black.jpeg ">
+                    <p>1+ Smartphones</p>
+                </div>
+            </div>
+            <p>More...</p>
+        </div>
+        <img src=" https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-sale-banner-smartphone-discount-gift-boxes-mobile-online-shopping-design-vector-illustration-209805667.jpg " class="offer">
+        <div class="products3">
+            <div class="p">
+                <img src="https://m.media-amazon.com/images/I/41212WwiTgL._AC_SY780_FMwebp_.jpg">
+                <p>Headphone</p>
+            </div>
+            <div class="p">
+                <img src="https://m.media-amazon.com/images/I/41TWRqE5PLL._AC_SY1000_FMwebp_.jpg">
+                <p>CCTV Camera</p>
+            </div>
+            <div class="p">
+                <img src="https://i.gadgets360cdn.com/products/cameras/large/1548234749_832_canon_eos-80d-24mp-dslr-camera.jpg?downsize=*:180&output-quality=80">
+                <p>DSLR Camera</p>
+            </div>
+            <div class="p">
+                <img src="https://cdn.shopify.com/s/files/1/0657/6821/products/BEHRINGERXM8500-3_grande.jpg?v=1613114673">
+                <p>Mic</p>
+            </div>
+            <div class="p">
+                <img src="https://m.media-amazon.com/images/I/41WskrNyD4L._AC_SY580_.jpg">
+                <p>Headphone with Microphone</p>
+            </div>
+            <div class="see_all">
+                <button>SEE<br>ALL</button>
+            </div>
+        </div>
+        <div class="products2">
+            <div>
+                <div class="p" >
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1601293021.06313819.png">
+                    <p>Cool Analog Watch</p>
+                </div>
+                <div class="p" >
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1599547836.16432398.png?width=420&height=420">
+                    <p>Smart Fitness Band</p>
+                </div>
+            </div>
+            <div>
+                <div class="p" >
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1602740212.59944092.png?width=420&height=420">
+                    <p>Wireless earphone</p>
+                </div>
+                <div class="p" >
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1598954033.54263100.jpg?width=420&height=420">
+                    <p>Mi Earphone</p>
+                </div>
+            </div>
+        </div>
+        <img src=" https://thumbs.dreamstime.com/b/vector-illustration-super-sale-banner-template-design-big-sales-special-offer-end-season-party-background-cool-136119596.jpg " class="offer">
+        <div class="products2">
+            <div>
+                <div class="p" >
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1622742774.07527790.jpg">
+                    <p>Smart Television</p>
+                </div>
+                <div class="p" >
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1615887773.58331975.png">
+                    <p>Mi Smart T.V.</p>
+                </div>
+            </div>
+            <div>
+                <div class="p" >
+                    <img src=" https://m.media-amazon.com/images/I/4101Dvt-gaL._AC_SY580_FMwebp_.jpg ">
+                    <p>Speaker</p>
+                </div>
+                <div class="p" >
+                    <img src=" https://static.gadgetandgear.com/image/250x250/fit/tmp/product/20201126_1606382810_704161.jpeg ">
+                    <p>Bluetooth Speaker</p>
+                </div>
+            </div>
+        </div>
+        <div class="products1">
+            <h3>Upto 20% Off on all Laptop Brands</h3>
+            <div>
+                <div class="p" >
+                    <img src="https://m.media-amazon.com/images/I/41PnIUzyYML._AC_SY580_FMwebp_.jpg">
+                    <p>Lenovo</p>
+                </div>
+                <div class="p" >
+                    <img src=" https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/inspiron_notebooks/inspiron_13_5310/media-gallery/95-moonknight-inspiron-media-gallery-notebook-inspiron-13-5310-lb-5000x5000.psd?fmt=pjpg&amp;pscan=auto&amp;scl=1&amp;hei=402&amp;wid=402&amp;qlt=85,0&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0&amp;size=402,402 ">
+                    <p>Dell</p>
+                </div>
+            </div>
+            <div>
+                <div class="p" >
+                    <img src="https://cdn1.smartprix.com/rx-i9LPUJyA3-w240-h290/huawei-matebook-13-l.webp">
+                    <p>Huawei</p>
+                </div>
+                <div class="p">
+                    <img src="https://www.notebookcheck.net/typo3temp/_processed_/e/0/csm_181004111903200301900006K_95047b6aab.jpg">
+                    <p>Microsoft</p>
+                </div>
+            </div>
+            <p>More...</p>
+        </div>
+        </div>
+        <div id="empty_cart">
+            <img src="https://cdn-icons-png.flaticon.com/128/2331/2331970.png" >
+            Your Cart is empty.
+        </div>
+        <div id="wishlist">
+            <h3>My Wishlist</h3>
+            <div class="products1"></div>
+        </div>
+        <!----Footer------>
+        <footer>
+            <div class="design"></div>
+            <div class="follow">
+                <p>Follow Us</p>
+                <p class="icons"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2sYQA43h6rGOaLk4hAJ-6YvxtXfPyP5TRQ&usqp=CAU" alt="facebook"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSndHDdqRa1Lh4OM_MlRi-baoD114kHS_qKqQ&usqp=CAU" alt="instagram"> <a href="https://www.sololearn.com/Profile/19277040/?ref=app"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcedTebZFBcmnDudPT7SfpujqhpiIjmYIq7w&usqp=CAU" alt="Sololearn"></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqdZ4Paj2OK3V_5nnH08rYZUoSqqmgDK1ZBA&usqp=CAU" alt="Twitter"></p>
+            </div>
+            <hr width="100%">
+            <div id="contact" class="follow">
+                <p>Contact Us</p>
+                <p class="icons mail">TechMall@gmail.com</p>
+            </div>
+            <hr width="70%">
+        <p id="rights">Help Centre<br>Legal<br>Privacy Policy<br>Conditions of use<br>&copy;2021, Monu. All rights reserved.</p>
+        </footer>
+    </section>
+<style>
+</style>
+<script type="text/javascript">
+    var main=document.getElementsByTagName("section")[0],wishlist=document.getElementById("wishlist"),header=document.getElementsByTagName("header")[0],search=document.getElementById("search"),mic=document.getElementsByClassName("bi-mic")[0] ,hearts=document.getElementsByClassName("heart"), p=document.getElementsByClassName("p"), prod1=document.getElementsByClassName("products1"),empty_cart=document.getElementById("empty_cart"), home_b=document.getElementsByClassName("bi-house")[0],cart=document.getElementsByClassName("bi-cart")[0],home=document.getElementById("home"),nr_b=document.getElementsByClassName("nr_b"),nav_row=document.getElementById("nav-row"),dot_box=document.getElementsByClassName("dot-box")[0], d=1,a = 0,nav_icon=document.getElementById("nav-icon"), nav_bar=document.getElementsByTagName("nav")[0];
+    nav_icon.addEventListener("click",navigate);
+    function navigate(){
+        nav_icon.classList.toggle("cross");
+        if(a==0){
+            nav_bar.style.marginLeft="0";
+            nav_bar.style.display="flex";
+            nav_bar.style.display="-webkit-box";
+            nav_icon.style.position="fixed";
+            a=1;
+        }
+        else{
+            nav_bar.style.marginLeft="-100%";
+            nav_icon.style.position="relative";
+            a=0;
+        }
+    }
+    dot_box.childNodes[0].style.backgroundColor="white";
+    setInterval(function(){
+        for(var i=0;i<dot_box.childNodes.length;i++){
+            dot_box.childNodes[i].style.backgroundColor="rgba(255,255,255,.5)";
+        }
+        if(d==4){d=0}
+            dot_box.childNodes[d].style.backgroundColor="white";
+            d++;
+    },3000)
+    for(var i=0;i<nr_b.length;i++){
+        nr_b[i].addEventListener("click",function(){
+            for(var j=0;j<nr_b.length;j++){
+                nr_b[j].classList.remove("awe");
+                this.classList.add("awe");
+            }
+        })
+    }
+    cart.addEventListener("click",function(){
+        home.style.display="none";
+        empty_cart.style.display="block";
+        wishlist.style.display="none";
+        navigate();
+    })
+    home_b.addEventListener("click",function(){
+        home.style.display="block";
+        wishlist.style.display="none";
+        empty_cart.style.display="none";
+        navigate();
+    })
+    for(var pp=0;pp<p.length;pp++){
+        var heart=document.createElement("b");
+        heart.classList.add("bi-heart");
+        heart.classList.add("heart")
+        p[pp].appendChild(heart);
+    } 
+    for(var h=0;h<hearts.length;h++){     
+        hearts[h].addEventListener("click",function(){
+            this.classList.toggle("bi-heart");
+            this.classList.toggle("bi-heart-fill")
+        })
+    }
+    function wishli(){
+        navigate();
+        wishlist.childNodes[3].innerHTML="";
+        home.style.display="none";
+        empty_cart.style.display="none";
+        wishlist.style.display="block";
+        var list=document.getElementsByClassName("bi-heart-fill");
+        for(z=0;z<list.length;z++){
+            wishlist.childNodes[3].innerHTML+='<div><div class="p" ><img src="'+list[z].parentNode.childNodes[1].src+'"><p>'+list[z].parentNode.childNodes[3].innerHTML+'</p></div></div>'
+        }
+    }
+    search.addEventListener("focus",function(){
+        mic.style.display="none";
+        header.style.marginTop="-38px";
+    })
+    search.addEventListener("blur",function(){
+        mic.style.display="block";
+        header.style.marginTop="0";
+        search.value="";
+    })
+    function load(){
+        var frst_page = document.getElementById("first_page");
+        frst_page.style.left="-100%";
+        setTimeout(function(){
+            frst_page.style.display="none";
+        },1000);
+    }
+    window.onload=setTimeout(load,5000)
+    
+</script>
+</body>
+</html>
+    
